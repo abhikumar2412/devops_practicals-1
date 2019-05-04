@@ -1,0 +1,5 @@
+---
+# tasks file for customerole
+#
+- name: This is my ansible role
+  debug: msg='This is my first ansible role'

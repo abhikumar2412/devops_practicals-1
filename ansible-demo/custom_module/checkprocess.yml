@@ -1,0 +1,11 @@
+---
+- hosts: server
+  user: root
+
+  tasks:
+    - name: Check if process is running
+      action: chkprocess process=nginx
+      register: process
+      become: yes
+
+    - debug: var=process
